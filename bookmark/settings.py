@@ -86,6 +86,13 @@ DATABASES = {
 }
 
 
+#custom authenticatrion with aunthentication.py file i created
+#by using email as well for authentication
+AUTHENTICATION_BACKENDS = (
+'django.contrib.auth.backends.ModelBackend',
+'account.authentication.EmailAuthBackend',
+)
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
