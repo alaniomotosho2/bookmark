@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'account',
+    'images',
     #must come after account
     'django.contrib.admin',
     #pip install python-social-auth==0.2.12
