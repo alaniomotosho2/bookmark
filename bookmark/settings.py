@@ -22,7 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.8/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'h@dkt00n0^#te$obvrq@$5x(36!c)vlmq%-1h&wxae84p2(py6'
+SECRET_KEY = 'vauaq62h2kjmsa27287jmsahsakusakjandsan'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -91,8 +91,12 @@ DATABASES = {
 #custom authenticatrion with aunthentication.py file i created
 #by using email as well for authentication
 AUTHENTICATION_BACKENDS = (
+'social.backends.facebook.Facebook2OAuth2',
+'social.backends.twitter.TwitterOAuth',
 'django.contrib.auth.backends.ModelBackend',
 'account.authentication.EmailAuthBackend',
+#facebook using facebook login
+
 )
 
 # Internationalization
@@ -107,6 +111,18 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+
+
+
+
+SOCIAL_AUTH_FACEBOOK_KEY = 'xyz'
+SOCIAL_AUTH_FACEBOOK_SECRET = 'zvf' # Facebook App Secret
+
+SOCIAL_AUTH_TWITTER_KEY = 'ajsnb27l' # Twitter Consumer Key
+SOCIAL_AUTH_TWITTER_SECRET = '' # Twitter Consumer Secret
+
 
 
 # Static files (CSS, JavaScript, Images)
