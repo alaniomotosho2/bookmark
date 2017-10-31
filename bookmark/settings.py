@@ -44,6 +44,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     #pip install python-social-auth==0.2.12
     'social.apps.django_app.default',
+    #thumbnail for image
+    'sorl.thumbnail',
 )
 
 MIDDLEWARE_CLASSES = (
