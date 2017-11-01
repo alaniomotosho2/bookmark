@@ -6,4 +6,6 @@ urlpatterns = [
 	url(r'^detail/(?P<id>\d+)/(?P<slug>[-\w]+)/$',views.image_detail, name='detail'),
 	#for ajax
 	url(r'^like/$', views.image_like, name='like'),
+	#for ajax pagination
+	url(r'^$', views.image_list, name='list'),
 ]
